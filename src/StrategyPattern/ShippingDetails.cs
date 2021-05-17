@@ -3,6 +3,8 @@ namespace StrategyPattern
 {
     public class ShippingDetails
     {
+        public ShippingDetails() { }
+
         public ShippingDetails(string shippingCompanyName, double packageWeigth
             , double shippingTotalCost)
         {

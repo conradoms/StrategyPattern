@@ -75,6 +75,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "StrategyPattern.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/StrategyPattern.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StrategyPattern.Services.dll": {}
+        }
       }
     }
   },
@@ -185,10 +195,16 @@
         "swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "StrategyPattern.Services/1.0.0": {
+      "type": "project",
+      "path": "../StrategyPattern.Services/StrategyPattern.Services.csproj",
+      "msbuildProject": "../StrategyPattern.Services/StrategyPattern.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "StrategyPattern.Services >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -216,7 +232,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/conradosilva/Projects/POCs/Minhas Implementacoes/StrategyPattern/src/StrategyPattern.Services/StrategyPattern.Services.csproj": {
+              "projectPath": "/Users/conradosilva/Projects/POCs/Minhas Implementacoes/StrategyPattern/src/StrategyPattern.Services/StrategyPattern.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

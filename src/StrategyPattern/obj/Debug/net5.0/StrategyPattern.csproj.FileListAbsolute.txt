@@ -26,3 +26,5 @@
 /Users/conradosilva/Projects/POCs/Minhas Implementacoes/StrategyPattern/src/StrategyPattern/obj/Debug/net5.0/ref/StrategyPattern.dll
 /Users/conradosilva/Projects/POCs/Minhas Implementacoes/StrategyPattern/src/StrategyPattern/obj/Debug/net5.0/StrategyPattern.pdb
 /Users/conradosilva/Projects/POCs/Minhas Implementacoes/StrategyPattern/src/StrategyPattern/obj/Debug/net5.0/StrategyPattern.genruntimeconfig.cache
+/Users/conradosilva/Projects/POCs/Minhas Implementacoes/StrategyPattern/src/StrategyPattern/bin/Debug/net5.0/StrategyPattern.Services.dll
+/Users/conradosilva/Projects/POCs/Minhas Implementacoes/StrategyPattern/src/StrategyPattern/bin/Debug/net5.0/StrategyPattern.Services.pdb

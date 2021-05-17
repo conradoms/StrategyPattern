@@ -1,0 +1,9 @@
+/Users/conradosilva/Projects/POCs/Minhas Implementacoes/StrategyPattern/src/StrategyPattern.Services/bin/Debug/netcoreapp3.1/StrategyPattern.Services.deps.json
+/Users/conradosilva/Projects/POCs/Minhas Implementacoes/StrategyPattern/src/StrategyPattern.Services/bin/Debug/netcoreapp3.1/StrategyPattern.Services.dll
+/Users/conradosilva/Projects/POCs/Minhas Implementacoes/StrategyPattern/src/StrategyPattern.Services/bin/Debug/netcoreapp3.1/StrategyPattern.Services.pdb
+/Users/conradosilva/Projects/POCs/Minhas Implementacoes/StrategyPattern/src/StrategyPattern.Services/obj/Debug/netcoreapp3.1/StrategyPattern.Services.csprojAssemblyReference.cache
+/Users/conradosilva/Projects/POCs/Minhas Implementacoes/StrategyPattern/src/StrategyPattern.Services/obj/Debug/netcoreapp3.1/StrategyPattern.Services.AssemblyInfoInputs.cache
+/Users/conradosilva/Projects/POCs/Minhas Implementacoes/StrategyPattern/src/StrategyPattern.Services/obj/Debug/netcoreapp3.1/StrategyPattern.Services.AssemblyInfo.cs
+/Users/conradosilva/Projects/POCs/Minhas Implementacoes/StrategyPattern/src/StrategyPattern.Services/obj/Debug/netcoreapp3.1/StrategyPattern.Services.csproj.CoreCompileInputs.cache
+/Users/conradosilva/Projects/POCs/Minhas Implementacoes/StrategyPattern/src/StrategyPattern.Services/obj/Debug/netcoreapp3.1/StrategyPattern.Services.dll
+/Users/conradosilva/Projects/POCs/Minhas Implementacoes/StrategyPattern/src/StrategyPattern.Services/obj/Debug/netcoreapp3.1/StrategyPattern.Services.pdb

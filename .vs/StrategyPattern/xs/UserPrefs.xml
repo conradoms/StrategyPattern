@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{9401B31A-F874-464D-AF49-3CDB4500A850}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/StrategyPattern/Controllers/ShippingController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/StrategyPattern.Services/Services/ShippingService.cs">
     <Files>
-      <File FileName="src/StrategyPattern/Controllers/ShippingController.cs" Line="40" Column="14" />
-      <File FileName="src/StrategyPattern/ShippingDetails.cs" Line="11" Column="51" />
+      <File FileName="src/StrategyPattern/Controllers/ShippingController.cs" Line="22" Column="46" />
+      <File FileName="src/StrategyPattern.Services/Services/ShippingService.cs" Line="38" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,8 +10,12 @@
           <Node name="StrategyPattern" expanded="True">
             <Node name="src" expanded="True">
               <Node name="StrategyPattern" expanded="True">
-                <Node name="Controllers" expanded="True">
-                  <Node name="ShippingController.cs" selected="True" />
+                <Node name="Controllers" expanded="True" />
+              </Node>
+              <Node name="StrategyPattern.Services" expanded="True">
+                <Node name="Models" expanded="True" />
+                <Node name="Services" expanded="True">
+                  <Node name="ShippingService.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -21,6 +25,9 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>src/StrategyPattern/StrategyPattern.Services/StrategyPattern.Services.csproj</String>
+  </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.StrategyPattern FirstBuild="True" PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

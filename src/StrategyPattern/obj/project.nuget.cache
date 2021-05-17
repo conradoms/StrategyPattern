@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mieo3vCc4pe/mC3uM2tnr4mxldHSguVDjgBd7BBdxX7t05mG7G6WtFttQZbmB1XyA9vhD9gfYa+mNoWXnthkqw==",
+  "dgSpecHash": "LUfUKprzBUsiag8YG/37cvJnroMvh79CU/TP+sK6tdOR09NoPZJs3xwPswPuEbneqbNxwkF4HLcxE8N0ebnQAA==",
   "success": true,
   "projectFilePath": "/Users/conradosilva/Projects/POCs/Minhas Implementacoes/StrategyPattern/src/StrategyPattern/StrategyPattern.csproj",
   "expectedPackageFiles": [
