@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using StrategyPattern.Services.Services;
+using StrategyPattern.ViewModel;
 
 namespace StrategyPattern.Controllers
 {
@@ -12,19 +13,19 @@ namespace StrategyPattern.Controllers
     public class ShippingController : ControllerBase
     {
         [HttpGet]
-        public ShippingDetails Get(double packageWeigth, int shippingCompanyCode)
+        public ActionResult Get(double packageWeigth, int shippingCompanyCode)
         {
             var shippingService = new ShippingService();
             var companyService = new ShippingCompanyService();
 
             var company = companyService.GetByCompanyCod(shippingCompanyCode);
 
-            if (company == null) return null;
+            if (company == null) return BadRequest(new ReturnViewModel(false, "Company not found"));
 
             var shippingDetails = new ShippingDetails(company.CompanyName,
                 packageWeigth, shippingService.CalculateShippingFee(shippingCompanyCode, packageWeigth));
 
-            return shippingDetails;
+            return Ok(new ReturnViewModel(true, string.Empty, shippingDetails));
         }
     }
 }

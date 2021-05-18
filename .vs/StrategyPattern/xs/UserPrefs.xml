@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{9401B31A-F874-464D-AF49-3CDB4500A850}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/StrategyPattern.Services/Services/ShippingService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/StrategyPattern/ViewModel/ReturnViewModel.cs">
     <Files>
-      <File FileName="src/StrategyPattern/Controllers/ShippingController.cs" Line="22" Column="46" />
-      <File FileName="src/StrategyPattern.Services/Services/ShippingService.cs" Line="38" Column="33" />
+      <File FileName="src/StrategyPattern/Controllers/ShippingController.cs" Line="23" Column="68" />
+      <File FileName="src/StrategyPattern.Services/Services/ShippingService.cs" Line="11" Column="1" />
+      <File FileName="src/StrategyPattern.Services/Services/ShippingCompanyService.cs" Line="19" Column="43" />
+      <File FileName="src/StrategyPattern/ViewModel/ReturnViewModel.cs" Line="6" Column="41" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,12 +13,12 @@
             <Node name="src" expanded="True">
               <Node name="StrategyPattern" expanded="True">
                 <Node name="Controllers" expanded="True" />
+                <Node name="ViewModel" expanded="True">
+                  <Node name="ReturnViewModel.cs" selected="True" />
+                </Node>
               </Node>
               <Node name="StrategyPattern.Services" expanded="True">
-                <Node name="Models" expanded="True" />
-                <Node name="Services" expanded="True">
-                  <Node name="ShippingService.cs" selected="True" />
-                </Node>
+                <Node name="Services" expanded="True" />
               </Node>
             </Node>
           </Node>
