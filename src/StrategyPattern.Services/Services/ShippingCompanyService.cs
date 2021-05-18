@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using StrategyPattern.Services.Interfaces;
 using StrategyPattern.Services.Models;
 
 namespace StrategyPattern.Services.Services
 {
-    public class ShippingCompanyService
+    public class ShippingCompanyService : IShippingCompanyService
     {
         public ShippingCompanyService()
         {

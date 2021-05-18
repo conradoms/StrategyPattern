@@ -13,5 +13,10 @@ namespace StrategyPattern.Services.Models
             CompanyCode = companyCode;
             CompanyName = companyName;
         }
+
+        public bool IsValid()
+        {
+            return this == null;
+        }
     }
 }

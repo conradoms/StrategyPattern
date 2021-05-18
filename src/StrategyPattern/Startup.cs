@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using StrategyPattern.Services.Interfaces;
+using StrategyPattern.Services.Services;
 
 namespace StrategyPattern
 {
@@ -32,6 +34,9 @@ namespace StrategyPattern
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "StrategyPattern", Version = "v1" });
             });
+
+            services.AddTransient<IShippingService, ShippingService>();
+            services.AddTransient<IShippingCompanyService, ShippingCompanyService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
