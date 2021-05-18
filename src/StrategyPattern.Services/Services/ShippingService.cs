@@ -1,42 +1,34 @@
 ﻿using System;
+using StrategyPattern.Services.Factory;
 using StrategyPattern.Services.Interfaces;
-using StrategyPattern.Services.Models;
 
 namespace StrategyPattern.Services.Services
 {
+    // Created by: Conrado Silva
+    // Date: 18/05/2021
+
+    // Description: This class is responsible to receive the desired shipping company code
+    // and package's weigth and calculate the fee according to the company desired.
+    // The factory instantiate a object that implements IShippingStrategy and
+    // will be used by CalculateShippingFee method to calculate fee.
+
     public class ShippingService : IShippingService
     {
-        public ShippingService()
+        private readonly IShippingStrategyFactory _shippingStrategyFactory;
+
+        public ShippingService(IShippingStrategyFactory shippingStrategyFactory)
         {
+            _shippingStrategyFactory = shippingStrategyFactory;
         }
 
         public double CalculateShippingFee(int desiredShippingCompanyCode,
             double weigth)
         {
-            double shippingCost = 0;
+            // Delegates the creation of objects to a factory keep the coupling low
+            var shippingStrategy = _shippingStrategyFactory.Create(desiredShippingCompanyCode);
 
-            if (desiredShippingCompanyCode == 1)
-            {
-                shippingCost = weigth * 1.50;
-            }
-            else if (desiredShippingCompanyCode == 2)
-            {
-                shippingCost = weigth * 0.85;
-            }
-            else if (desiredShippingCompanyCode == 3)
-            {
-                shippingCost = weigth * 5.5;
-            }
-            else if (desiredShippingCompanyCode == 4)
-            {
-                shippingCost = weigth * 2.95;
-            }
-            else if (desiredShippingCompanyCode == 5)
-            {
-                shippingCost = weigth * 11.95;
-            }
-
-            return shippingCost;
+            // Uses created strategy object to calculate fee
+            return shippingStrategy.Calculate(weigth);
         }
     }
 }

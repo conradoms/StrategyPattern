@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using StrategyPattern.Services.Factory;
 using StrategyPattern.Services.Interfaces;
 using StrategyPattern.Services.Services;
 
@@ -37,6 +38,7 @@ namespace StrategyPattern
 
             services.AddTransient<IShippingService, ShippingService>();
             services.AddTransient<IShippingCompanyService, ShippingCompanyService>();
+            services.AddTransient<IShippingStrategyFactory, ShippingStrategyFactory>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
