@@ -41,3 +41,21 @@
 📌 Use the pattern when your class has a massive conditional operator that switches between different variants of the same algorithm.
 
 ## Real Life Implementation
+
+### Class Diagram
+
+![StrategyPattern](https://user-images.githubusercontent.com/5831318/119040941-62dad280-b98c-11eb-8a3a-43e06b024383.png)
+
+### Solution Description
+
+This application simulates a service for calculating freight. The calculation method takes two parameters: Package weight and code of the desired logistics company.
+
+In the presented scenario, a very common problem in real applications may arise: How to select a specific runtime algorithm according to the user input parameters and keep the application code maintainable, open for expansion and without hurting the SOLID principles?
+
+Before implementing a possible solution, in the first commits of the main branch it is possible to view the implementation of the problem before refactoring.
+The proposed solution implements the Strategy design pattern. This choice was made in order to avoid the indiscriminate use of IF or Switch Case clauses to select the calculation strategy by company and to encapsulate the calculation rules, thus facilitating the inclusion of new calculation strategies and unit tests.
+
+In this project, the ShippingService class is used by the ShippingController controller and is responsible for calculating the fee. This class uses the Factory pattern to abstract and encapsulate the creation of strategy objects and to decrease coupling. The strategy objects implement the IShippingStrategy interface, which in turn defines a contract where the Calculate method must be present in all classes that implement this interface. The Create method of the ShippingStrategyFactory class receives the code of the desired company as a parameter and provides the class instance that contains the company's calculation strategy. After obtaining the desired calculation strategy according to the company code, the CalculateShippingFee method of the ShippingService class invokes the Calculate method of the acquired strategy and returns the result to the controller.
+
+## Contact
+> Created by [Conrado Silva](mailto:conradoms@gmail.com) - Feel free to contact me. 🤓
