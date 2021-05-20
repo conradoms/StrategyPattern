@@ -9,7 +9,8 @@
 * [Introducing Strategy Pattern](#introducing-strategy-pattern)
 * [Pros and Cons](#pros-and-cons)
 * [When to use](#when-to-use)
-* [Real Life Implementation](#Real-life-implementation)
+* [Real Life Implementation](#real-life-implementation)
+* [Contact](#contact)
 
 ## Introducing Strategy Pattern
 [Strategy Pattern](https://en.wikipedia.org/wiki/Strategy_pattern) is a behavioral software design pattern that enables selecting an algorithm at runtime. Instead of implementing a single algorithm directly, code receives run-time instructions as to which in a family of algorithms to use.
